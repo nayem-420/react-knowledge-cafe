@@ -15,7 +15,10 @@ const Blogs = () => {
         <div className="md:w-2/3">
             <h1 className="text-4xl">Blogs: {blogs.length}</h1>
             {
-                blogs.map(blog => <Blog blog = {blog} key={blogs.id}></Blog>)
+                blogs.map(blog => <Blog 
+                    blog = {blog} 
+                    key={blog.id}
+                ></Blog>)
             }
         </div>
     );
